@@ -6,6 +6,9 @@ from backend.Loader import LoaderImage
 from backend.Model import MyModelLoader
 
 router = APIRouter()
+# @router.on_event("startup")
+# async def startup_event():
+#     print('hellow')
 model = MyModelLoader()
 
 @router.on_event("startup")
